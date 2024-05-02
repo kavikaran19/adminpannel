@@ -37,11 +37,11 @@ export default function AddDoctor() {
     return (
         <Container >
 
-            <Typography variant="h5" align="center" padding={9} >
+            <Typography variant="h6" border={2} sx={{backgroundColor:'#2D2440', color:'white'}} align="center" padding={6} >
                 Add Doctor 
             </Typography>
 
-            <Stack spacing={4}>
+            <Stack spacing={4} padding={2}>
                 <TextField id="outlined-basic" label="Doctor Name" variant="outlined" value={name}
                     onChange={(e) => setDoctorName(e.target.value)} />
                 <TextField id="outlined-basic" label="Specialization" variant="outlined" value={specialization}
