@@ -9,6 +9,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
+import DeleteSweepTwoToneIcon from '@mui/icons-material/DeleteSweepTwoTone';
 
 function createData(id, doctor_name, specialization) {
   return { id, doctor_name, specialization };
@@ -73,7 +74,9 @@ export default function BasicTable() {
               <TableCell align="right">{row.doctor_name}</TableCell>
               <TableCell align="right">{row.specialization}</TableCell>
               <TableCell align="right">
-                <Button onClick={() => handleDelete(row.id)}>Delete</Button>
+                <Button onClick={() => handleDelete(row.id)}>
+                    <DeleteSweepTwoToneIcon/>
+                </Button>
               </TableCell>
             </TableRow>
           ))}
